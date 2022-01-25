@@ -1,0 +1,29 @@
+/* LIST */
+.list-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.checkbox{
+    flex: 5%;
+    margin-left: 15px;
+}
+
+.list-text{
+    flex: 65%;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+
+.list-btn {
+flex: 10%;
+margin-right: 15px;
+}
