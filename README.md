@@ -1,5 +1,6 @@
 ## DESCRIPTION:
 a simple Todo App, with React + useState hooks.
+* Version2 Branch is the same App, but with Redux toolkit.
 
 ## OUTCOME:
 duh... I wanna be a React Super Herooooooooooo..
