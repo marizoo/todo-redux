@@ -1,17 +1,19 @@
 ## DESCRIPTION:
-a simple Todo App, with React + useState hooks.
-* Version2 Branch is the same App, but with Redux toolkit.
+- Version2 of the same App, but with Redux toolkit.
 
 ## OUTCOME:
-duh... I wanna be a React Super Herooooooooooo..
+Playing with Redux Toolkit.
 
 ## TECH STACKS:
-- React
-- React hooks: useState.
+- React.
+- State Management: Redux Toolkit. 
 - Styling: Bootstrap5 + css.
 
 ## PROGRESS:
-- Done: 100%;
+- Done: 90%;
+
+## TO DO:
+- the Delete button doesn't work :(
 
 ## How to run
 `yarn install`
