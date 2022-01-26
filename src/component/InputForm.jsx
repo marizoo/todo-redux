@@ -11,7 +11,6 @@ const InputForm = ({onNewInputs}) => {
     const newInput = {
       id: nanoid(),
       text: input,
-      
     }
 
     onNewInputs(newInput);
@@ -19,12 +18,12 @@ const InputForm = ({onNewInputs}) => {
   }
 
   return (
-    <div className="row">
-    <form className="col-sm-4" onSubmit={handleSubmit}>
+    
+    <form className="col-md-4" onSubmit={handleSubmit}>
         <input value={input} onChange={(ev) => setInput(ev.target.value)} type="text" className='form-control my-2' placeholder='Add Todo' />
         <button type="submit" className='btn btn-primary fw-bold'>Submit</button>
     </form>
-</div>
+
 )};
 
 export default InputForm;

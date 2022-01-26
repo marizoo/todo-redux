@@ -1,23 +1,16 @@
 ## DESCRIPTION:
-an E-commerce Website Shop.
+a simple Todo App, with React + useState hooks.
 
 ## OUTCOME:
-to learn building e-commerce webshop with React.
+duh... I wanna be a React Super Herooooooooooo..
 
 ## TECH STACKS:
-- react
-- react-router-dom
-- MUI5
-- Commerce.js
-- Stripe
+- React
+- React hooks: useState.
+- Styling: Bootstrap5 + css.
 
 ## PROGRESS:
-- Done: 
-- Progress: xoxo
-- Not Working: xoxo
-
-### Error Message(s):
-"xoxo"
+- Done: 100%;
 
 ## How to run
 `yarn install`
@@ -25,4 +18,4 @@ to learn building e-commerce webshop with React.
 
 
 ## IMAGE:
-![Screenshot of the site](./screenshots/bs-03-zoobar-600.jpg)
+![Screenshot of the site](./screenshots/48.todo-version1.png)

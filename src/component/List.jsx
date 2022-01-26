@@ -7,10 +7,10 @@ const iconStyle = {
 
 const List = ({datas, onHandleDelete, onHandleCheckBox}) => {
   return (
-    <div className='row'>
+    
             <ul>
               {datas.map((data, index) => (
-                <li className=" col-sm-4 list-box" key={data.id}>
+                <li className=" col-md-4 list-box" key={data.id}>
                   <div className="checkbox"> 
                     {data.isCompleted && <GrCheckboxSelected style={iconStyle} onClick={() => onHandleCheckBox(index)}/>}
                     {!data.isCompleted && <GrCheckbox style={iconStyle} onClick={() => onHandleCheckBox(index)}/>}
@@ -24,7 +24,7 @@ const List = ({datas, onHandleDelete, onHandleCheckBox}) => {
                 
                 
             </ul>
-    </div>
+    
   )};
 
 export default List;

@@ -42,17 +42,19 @@ const App = () => {
   const handleCheckBox = (index) => {
     const dataCheckBox = datas[index].isCompleted = !datas[index].isCompleted
     setIsCompleted(dataCheckBox);
-    console.log('DATAS', datas);
+    
   }
 
   
 
 return (
-    <div className='container'>
+    <div className='container-fluid'>
+      <div className='row'>
         <h1 className='mt-5'>My Todo List</h1>
         <InputForm onNewInputs={handleNewInput}/>
         <List datas={datas} onHandleDelete={handleDelete} onHandleCheckBox={handleCheckBox}/>
         <h2>Total Items: {total}</h2>
+        </div>
     </div>
 
   )};
