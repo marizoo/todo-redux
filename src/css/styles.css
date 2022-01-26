@@ -27,3 +27,7 @@
 flex: 10%;
 margin-right: 15px;
 }
+
+.strike {
+    text-decoration: line-through;
+}

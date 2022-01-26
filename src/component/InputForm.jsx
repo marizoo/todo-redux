@@ -1,11 +1,28 @@
-import React from 'react';
+import { nanoid } from '@reduxjs/toolkit';
+import React, {useState} from 'react';
 
-const InputForm = () => {
+const InputForm = ({onNewInputs}) => {
+
+  const [input, setInput] = useState('');
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+
+    const newInput = {
+      id: nanoid(),
+      text: input,
+      
+    }
+
+    onNewInputs(newInput);
+    setInput('');
+  }
+
   return (
     <div className="row">
-    <form className="col-sm-4">
-        <input type="text" className='form-control my-2' placeholder='Add Todo' />
-        <button className='btn btn-primary fw-bold'>Submit</button>
+    <form className="col-sm-4" onSubmit={handleSubmit}>
+        <input value={input} onChange={(ev) => setInput(ev.target.value)} type="text" className='form-control my-2' placeholder='Add Todo' />
+        <button type="submit" className='btn btn-primary fw-bold'>Submit</button>
     </form>
 </div>
 )};
