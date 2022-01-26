@@ -1,19 +1,19 @@
-import { nanoid } from '@reduxjs/toolkit';
 import React, {useState} from 'react';
+import { useDispatch } from 'react-redux';
+import { addTodo } from '../redux/todoSlice';
 
-const InputForm = ({onNewInputs}) => {
+const InputForm = () => {
+
+  const dispatch = useDispatch();
 
   const [input, setInput] = useState('');
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
 
-    const newInput = {
-      id: nanoid(),
+    dispatch(addTodo({
       text: input,
-    }
-
-    onNewInputs(newInput);
+    }))
     setInput('');
   }
 
